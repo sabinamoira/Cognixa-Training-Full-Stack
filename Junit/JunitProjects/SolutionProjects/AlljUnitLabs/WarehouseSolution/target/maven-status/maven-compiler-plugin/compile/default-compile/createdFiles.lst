@@ -1,0 +1,5 @@
+com\fidelity\model\Gadget.class
+com\fidelity\warehouse\WarehouseException.class
+com\fidelity\model\Product.class
+com\fidelity\warehouse\Warehouse.class
+com\fidelity\model\Widget.class

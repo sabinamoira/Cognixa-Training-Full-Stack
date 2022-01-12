@@ -1,0 +1,11 @@
+-Spring JDBC Template
+- JDBC Template Intro
+- Database Connectivity 
+- Intro to h2 database and dependency
+- Spring JDBC
+- Repository Interface connects to source/Object
+- Creating CRUD operations and Queries
+	~CRUD Was implemented in Controller
+	~Queries implemented in JdbcBookRepository 
+	~Repository interface held all operations required (no implementations)
+

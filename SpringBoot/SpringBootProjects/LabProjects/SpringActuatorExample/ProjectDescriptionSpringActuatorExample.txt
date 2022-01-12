@@ -1,0 +1,6 @@
+Intro to Actuator
+-Handles Logging for Backend
+-Health Checks
+	~Logs Security and Accesses 
+	~Errors/Exception
+	~Service Availability

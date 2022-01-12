@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: helloworld
+spec:
+  #backoffLimit: 2
+  #completions: 2
+  #parallelism: 2
+  activeDeadlineSeconds: 10
+  template:
+    spec:
+      containers:
+        - name: hello
+          image: busybox
+          #command: ["sleep", "60"]
+          #command: ["echo", "Hello World"]
+          command: ["ls", "/rohan"]
+      restartPolicy: Never
+
+      
+
+

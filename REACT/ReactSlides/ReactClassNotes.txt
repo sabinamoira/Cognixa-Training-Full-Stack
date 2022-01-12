@@ -1,0 +1,143 @@
+![Cognixia Logo](https://user-images.githubusercontent.com/1474579/123431844-ba75ea80-d597-11eb-9446-16a70c044d45.png)
+
+# React Class Notes (http://bit.ly/react-ibm)
+
+- [Computer Setup: sent to you via email before class](https://handsonreact.com/docs/computer-setup)
+- [Course Materials: handsonreact.com](https://handsonreact.com/docs)
+
+
+## Introductions
+- [Technical Background Survey](https://www.surveymonkey.com/r/P9QWZND)
+- What does your name mean?
+  - Craig McKeachie
+  - First: Craig- Scottish Gaelic word creag, meaning "rock,"
+  - Last: McKeachie- Owner of many horses
+  
+## How the Class Works
+### Concepts
+- Includes numerous demonstrations
+- Step-by-step directions provided
+- Demonstrations done:
+  - Instructor and attendees together initially
+  - Then attendees decide whether doing or watching and asking questions works best for them
+
+### Labs
+- Building an application one step at a time
+- Hands-on for attendees
+- Step-by-step directions
+- If you miss lab or don’t finish a lab, you can pickup on the next one
+- Solution code provided
+- In class time allocated, 1 hour in the middle of each day and 1 hour at the end of each day
+  - For some people this will be enough time to do the labs
+  - For most people there will not be enough time to complete all the labs in class
+  - I understand we learn best by doing  
+  - The normal class material is:
+      - 2 days of demonstrations, live-coding and concept learning 
+      - 1 day of hands-on labs
+  -  3 days total has been compressed into a fast-paced 2 days with homework at IBM's request
+     - 1.5 days 2 days of demonstrations, live-coding and concept learning 
+     - .5 day of hands-on labs 
+
+## Schedule
+- Date: Jun 25, 28th, 2021 | Start Time: 10:00AM| End Time: 06:00PM| Time zone: Eastern
+- Breaks: 10-15 minute breaks every 90 minutes or so
+  - __We will start right after breaks__
+- Lunch: 40 minutes?
+- Lunch time: 12:30 Eastern 
+
+## Outline
+- Prerequisites (will be reviewed as they come up during the course)
+  - Package Manager (npm/Yarn)
+  - Compiler Setup (JavaScript Compiler: Babel)
+  - Modern JavaScript ES6/ES2015
+- [Foundation: Prerequisite Materials](https://handsonreact.com/docs/essential-javascript-react)
+- [Outline is the Site Navigation on handsonreact.com](https://handsonreact.com/docs/)
+ - Day 1 
+    - Overview, Elements, JSX, Virtual DOM, Components, Project Setup: Labs 1-5
+    - Code Organization & Conventions, Props & PropTypes, Lists, Events: Labs 6-10
+ - Day 2
+    - Hooks, State, Side Effects & Lifecycle, Conditional Rendering, Component Architecture, Debugging: Labs 11-14
+    - Forms, Backend API Setup, HTTP: Labs 15-19
+  - If time permits:
+    - Routing, Build & Deploy
+    - Custom Hooks, Intro to State Management
+
+## Questions
+- Are welcome
+- Off topic questions will be put on a backlog but we will get to them later in the course 
+- Labs are to facilitate 12 people learning at their own pace and learning style
+
+## Challenge (optional if time permits) 
+- Build a Color Picker (no directions, use items example in Component Arch chapter as reference)
+- List Colors
+- Hide and Show List Item or Form after clicking a project or cancel
+- Update a Color
+- Remove a Color
+- Use HTTP calls to list, update, remove from backend (json-server)
+
+## FAQ
+- [Strict Mode Documentation](https://reactjs.org/docs/strict-mode.html)
+- [Strict Mode Rendering Twice](https://stackoverflow.com/questions/61254372/my-react-component-is-rendering-twice-because-of-strict-mode)
+
+## Supporting IE11
+
+- [React App Polyfill](https://www.npmjs.com/package/react-app-polyfill)
+  - Start by confirming you did the steps in the readme on this page
+- Additional Steps
+  1. Update browserlist development settings:
+  #### `package.json`
+  ```diff
+  "development": [
+  +    "ie 11",
+      "last 1 chrome version",
+      "last 1 firefox version",
+   ...   
+  ```
+  2. Fix npm audit issues and make sure you have the latest version of packages
+  ```
+  Ctrl+C stop any `npm start` from running
+  npm audit fix
+  delete `node_modules` directory and `package-lock.json` \\close VS Code before doing this so directory isn't locked
+  npm install
+  npm start
+  ```
+  3. Check if it works now (I think it will...if not do the next step)
+  4. https://github.com/facebook/create-react-app/issues/8197#issuecomment-606443853
+- [Used this Github issue as a reference](https://github.com/facebook/create-react-app/issues/8197)
+  > I found this by visiting the react-app-polyfill github site> issues tab> searched for IE11 
+
+# Day 1
+- [HTML Autocomplete: Emmet Cheatsheet](https://docs.emmet.io/cheat-sheet/)
+- [Import Syntax: ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [Installing Multiple Versions of Node using nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/)
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+- [Prettier: Opinionated Code Formatter](https://prettier.io/)
+- [Are arrow functions faster (more performant, lighter) than ordinary standalone function declaration](https://stackoverflow.com/questions/44030645/are-arrow-functions-faster-more-performant-lighter-than-ordinary-standalone-f/44031830#:~:text=Arrow%20functions%20are%20(mostly)%20just,There%20is%20no%20performance%20difference.&text=The%20following%20shows%20that%3A,first%20(either%20traditional%20or%20fat))
+- [Django & React: Prefer Single-Page App Model with JWTs](https://fractalideas.com/blog/making-react-and-django-play-well-together/)
+
+
+## Upgrading React
+- [Updating Project Dependencies](https://handsonreact.com/docs/package-managers#updating-dependencies)
+#### TLDR;
+```
+npm install react@latest react-dom@latest react-scripts@latest
+```
+OR
+```
+npx npm-check -u
+```
+
+#### Details
+- [Updating React 15 to 16](https://stackoverflow.com/questions/47244506/what-is-the-procedure-on-upgrading-react-15-x-to-react-16-x)
+- [Upgrading to React 16](https://reactjs.org/blog/2017/09/26/react-v16.0.html#upgrading)
+- [Upgrading Create React App (React Scripts)](https://github.com/facebook/create-react-app/blob/master/CHANGELOG.md#migrating-from-34x-to-400)
+- [Upgrading React](https://stackoverflow.com/a/49829751/48175)
+
+# Day 2
+- [Use Effect Explained](https://leewarrick.com/blog/react-use-effect-explained/)- [GraphQL: Query Language for APIs](https://graphql.org/)
+- [SWR: Alternative to Redux Helps with Architecture](https://swr.vercel.app/getting-started)
+- [React Query](https://react-query.tanstack.com/docs/videos)
+- [React Refs](https://www.robinwieruch.de/react-ref)
+
+
+![image](https://user-images.githubusercontent.com/1474579/99535439-e6cce700-2976-11eb-952d-0d770f7ca7c9.png)

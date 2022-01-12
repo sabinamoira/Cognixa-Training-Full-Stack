@@ -1,0 +1,22 @@
+1. Create a Spring Boot CRUD Application for Employee Object
+
+2. Employee has an id/ name/ age and salary
+
+3. Expose CRUD operations as a Restful WS
+
+	a. FindAllEmplyees
+	b. FindByEmplyeeId
+	c. DeleteEmplyeeById
+	d. CreateEmployee
+	e. UpdateEmployee
+
+4. Enable health checks
+
+5. H2 Database to persist the data
+
+6. Use Spring data JPA
+
+7. Secure the Webservice and allow only authenticated users to access it
+
+   Optional
+8. Only admin users are able to access h2 database console

@@ -1,0 +1,13 @@
+JPA Intro
+- JPA uses POJO simpler (preffered) than JDBC
+- h2 database
+- Repository extends CRUDRepository
+	~ Easy CRUD Operation implementations
+	~ No need to write queries(SQL) for common CRUD Operations (DELETE, POST, GET, ect.)
+	~ Only need to write custom queries like findByName 
+- Repository connects to Service which connects to Controller
+	~ Queries implemented in CRUDRepository 
+	~ Service implemented CRUD functions no major code (call to Repository call to CRUDRep handled boiler code)
+	~ CRUD Operations Was implemented in Controller	
+	~ Repository interface only listed custom CRUD functions required (no implementations)
+

@@ -1,0 +1,17 @@
+Intro to REST (Representational State Tranfer: REST Desciption in parenthesis)
+(~Lightweight Infrastructure completely Stateless)
+(~Implemetations Require minimal tooling)
+
+-Intro to Spring
+-Intro to JAX 
+-Spring Web Security
+-CRUD Operations
+-Exception Handling
+
+Intro to SpringBoot
+Contains:
+- Basic Web Application
+- CRUD Operations
+- Exception Handling 
+- Security (Token Authorization)
+- POM XML (Spring Web)
