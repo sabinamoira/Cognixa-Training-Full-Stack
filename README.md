@@ -1,1 +1,1 @@
-# sabinamoira-Cognixa-Training-Full-Stack
+# Cognixa-Training-Full-Stack
